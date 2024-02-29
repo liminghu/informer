@@ -1,10 +1,10 @@
-# informer
+# informer ¨C Anything about general Transformer!
 
-This repository will review and be tutoring transformer for time series (classification, regression), computer vision and NLP
+This repository will review and be tutoring transformer for time series (classification, regression), computer vision and NLP.
 
 ## 1. Transformer for NLP
 
-* Attention is All You Need
+* [Attention is All You Need] (file://\transformer\Attention Is All You Need.pdf)
 
 ## 2. Transformer for computer vision
 
@@ -21,3 +21,7 @@ Multivariate Time Series Transformer: We propose a transformer-based framework f
 * Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting
 * Are Transformers Effective for Time Series Forecasting?
 * Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
+* Autoformer: Tutorial notebook
+
+Contribution to this effort is welcome!
+
