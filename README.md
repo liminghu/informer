@@ -21,3 +21,22 @@ This repository will review and be tutoring transformer for time series (classif
 * Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting
 * Are Transformers Effective for Time Series Forecasting?
 * Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
+
+module.exports = {
+  "names": [ "any-blockquote" ],
+  "description": "Rule that reports an error for any blockquote",
+  "information": new URL("https://example.com/rules/any-blockquote"),
+  "tags": [ "test" ],
+  "function": function rule(params, onError) {
+    params.parsers.markdownit.tokens.filter(function filterToken(token) {
+      return token.type === "blockquote_open";
+    }).forEach(function forToken(blockquote) {
+      var lines = blockquote.map[1] - blockquote.map[0];
+      onError({
+        "lineNumber": blockquote.lineNumber,
+        "detail": "Blockquote spans " + lines + " line(s).",
+        "context": blockquote.line.substr(0, 7)
+      });
+    });
+  }
+};
