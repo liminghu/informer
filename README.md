@@ -1,4 +1,4 @@
-\# informer ¨C Anything about general Transformer!
+\# informer: Anything about general Transformer!
 
 This repository will review and be tutoring transformer for time series (classification, regression), computer vision and NLP.
 
